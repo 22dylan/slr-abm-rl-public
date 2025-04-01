@@ -2,7 +2,7 @@
  Galveston sea level rise (SLR), agent-based model (ABM), and reinforcement learning (RL) repository. Public version used for documenting this code. 
 
 *Note*: This repository requires input data that is available at 
-https://doi.org/10.5281/zenodo.15120620. After the dataset above is downloaded, add it to the main directory in a folder named `iput`.
+https://doi.org/10.5281/zenodo.15120620. After the dataset above is downloaded, add it to the main directory in a folder named `input`.
 
 This repository contains steps 2 (train agents) and 3 (agent-based model) in the flowchart below. Step 1 of the flowchart is available for download at https://doi.org/10.5281/zenodo.11402964 and produces the data above that is necessary to run this repository. 
 
