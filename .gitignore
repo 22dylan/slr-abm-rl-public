@@ -1,0 +1,31 @@
+# MacOS files
+**/.DS_Store
+
+# Shapefiles
+*.shp
+*.shx
+*.shp
+*.qmd
+*.prj
+*.dbf
+*.cpg
+*.qix
+
+# Output png files
+*.png
+
+# large output files
+**/Output/
+**/output/
+**/training-results
+
+# large input files
+**/slr-scenarios/
+
+# machine specific files/dependencies
+# **/Manifest.toml
+
+**/run-test/
+
+# ignore model checkpoint
+mymodel
