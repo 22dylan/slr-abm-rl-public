@@ -12,7 +12,7 @@
 *.qix
 
 # Output png files
-*.png
+# *.png
 
 # large output files
 **/Output/
