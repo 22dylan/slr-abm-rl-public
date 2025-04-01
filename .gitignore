@@ -23,9 +23,12 @@
 **/slr-scenarios/
 
 # machine specific files/dependencies
-# **/Manifest.toml
+**/Manifest.toml
 
 **/run-test/
 
 # ignore model checkpoint
 mymodel
+
+# ignore input files
+*/input/
