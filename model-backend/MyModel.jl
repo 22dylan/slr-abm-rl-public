@@ -479,7 +479,7 @@ and year of exposure (columns)
 function read_slr_exposure(input_struct; order::Vector{String}, rng::AbstractRNG)
     sc = input_struct.slr_scenario
     ne = input_struct.slr_ne
-    path_to_slr_scns = joinpath(pwd(), "slr-scenarios")
+    path_to_slr_scns = joinpath(pwd(), "input", "slr-scenarios")
     if (sc == "train")        # no scenario given, so sample scenario
         path_to_exposure = joinpath(path_to_slr_scns, "building-exposure")
         files = readdir(path_to_exposure)

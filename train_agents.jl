@@ -49,7 +49,8 @@ function run_training(input_struct::InputStruct, parsed_args::Dict)
     (check_run_previously_done(input_struct, parsed_args)) && (return)          # check if run has been completed
     dqn_param = DQNParam()                                                      # setup DQN params
     read_dqn_discount!(dqn_param, input_struct)                                 # read dqn discount and update
-    path_to_input_dir = joinpath(pwd(), "model-runs", input_struct.model_runname, "input")  # path to input dir
+    # path_to_input_dir = joinpath(pwd(), "model-runs", input_struct.model_runname, "input")  # path to input dir
+    path_to_input_dir = joinpath(pwd(), "input")
 
     # setting up path to training dir; checking parsed_args; creating training dir
     path_to_training_dir = pwd()
@@ -812,7 +813,7 @@ run_subnames = ["agent1",
                 "agent8",
 ]
 Threads.@threads for run_subname in run_subnames
-    train("status-quo-training", run_subname)
+    train("status-quo", run_subname)
 end
 
 

@@ -44,7 +44,8 @@ function main()
     (parsed_args["model_runname"]!=nothing) && (input_struct.model_runname = parsed_args["model_runname"])
     println("\nRunning Model: $(input_struct.model_runname)")
 
-    path_to_input_dir = joinpath(pwd(), "model-runs", input_struct.model_runname, "input")
+    # path_to_input_dir = joinpath(pwd(), "model-runs", input_struct.model_runname, "input")
+    path_to_input_dir = joinpath(pwd(), "input")
     run_model(input_struct, parsed_args, path_to_input_dir)
 end
 
@@ -65,14 +66,14 @@ function run_model(input_struct, parsed_args, path_to_input_dir)
                                     sdata=get_space_save_data(),
                                     )
         # --- saving results for iteration
-        # fn_agnts = "df_agnts_$(i)_sc$(input_struct.slr_scenario)_ne$(input_struct.slr_ne).csv"
-        # write_out(data_a, model, fn_agnts)
+        fn_agnts = "df_agnts_$(i)_sc$(input_struct.slr_scenario)_ne$(input_struct.slr_ne).csv"
+        write_out(data_a, model, fn_agnts)
 
         fn_model = "df_model_$(i)_sc$(input_struct.slr_scenario)_ne$(input_struct.slr_ne).csv"
         write_out(data_m, model, fn_model)
 
-        # fn_space = "df_space_$(i)_sc$(input_struct.slr_scenario)_ne$(input_struct.slr_ne).csv"
-        # write_out(data_s, model, fn_space)
+        fn_space = "df_space_$(i)_sc$(input_struct.slr_scenario)_ne$(input_struct.slr_ne).csv"
+        write_out(data_s, model, fn_space)
 
         close_model!(model, input_struct.model_runname)
         next!(p)

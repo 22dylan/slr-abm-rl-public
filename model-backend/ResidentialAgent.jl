@@ -499,13 +499,13 @@ note that this is currently represented a percentage of `c_elevate` that is
 Example, agent.state[7] = 0.5 indicates that the cost to elevate is 50% of `c_elevate`
 """
 function update_state_c_elevate!(agent::ResidentialAgent, model::ABM)
-    # agent.state[7] = 0.41f0
+    agent.state[7] = 0.82f0
     # if (model.year >= 2090) && (model.year < 2100)
-    if agent.state[2]> 0f0
-        agent.state[7] = 0.41f0
-    else
-        agent.state[7] = 0.82f0
-    end
+    # if agent.state[2]> 0f0
+        # agent.state[7] = 0.41f0
+    # else
+        # agent.state[7] = 0.82f0
+    # end
 end
 
 """

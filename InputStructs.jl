@@ -3,11 +3,11 @@
 
 Base.@kwdef mutable struct InputStruct
     model_runname::String="status-quo"            # model runname
-    sub_runname::String="scInt-ne0p5_celevate0p41_targeted"              # model subruname; used in testing agents
+    sub_runname::String="scInt-ne0p5"              # model subruname; used in testing agents
 
     train::Bool=false
     n_years::Int64=76                       # number of years per iteration/episode
-    n_iterations::Int64=1000                 # number of iterations (or episodes) in model runs
+    n_iterations::Int64=10                 # number of iterations (or episodes) in model runs
     slr_scenario::String="Int"              # noaa sea level rise (slr) scenario (Low, IntLow, Int, IntHigh, High) or "train"
     slr_ne::String="0.5"                    # noaa sea level rise (slr) non-exceedance prob (ne) (0.17, 0.5, 0.83) or "train"
     seed::Int64=1337                        # seed for simulations
@@ -17,7 +17,7 @@ Base.@kwdef mutable struct InputStruct
     # agent_families::Array{Symbol}=[:agent1, :agent2, :agent4, :agent5, :agent7]
     agent_families::Array{Symbol}=[:agent1, :agent2, :agent3, :agent4, :agent5, :agent6, :agent7, :agent8]
     agent_family_weights::Array{Float64}=Float64[]
-    agent_network_episode::String="5000000"
+    agent_network_episode::String="1000000"
 end
 
 
