@@ -31,4 +31,4 @@
 mymodel
 
 # ignore input files
-*/input/
+**/input/*
