@@ -7,7 +7,7 @@ Base.@kwdef mutable struct InputStruct
 
     train::Bool=true
     n_years::Int64=75                       # number of years per iteration/episode
-    n_train_iterations::Int64=5_000_000     # number of iterations (or episodes) in training runs (solo environment)
+    n_train_iterations::Int64=1_000_000     # number of iterations (or episodes) in training runs (solo environment)
     slr_scenario::String="Int"              # noaa sea level rise (slr) scenario (Low, IntLow, Int, IntHigh, High) or "train"
     slr_ne::String="0.5"                    # noaa sea level rise (slr) non-exceedance prob (ne) (0.17, 0.5, 0.83) or "train"
     seed::Int64=1337                        # seed for simulations

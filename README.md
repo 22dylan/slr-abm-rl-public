@@ -1,4 +1,7 @@
 # slr-abm-rl-public
+
+[![DOI](https://zenodo.org/badge/958641288.svg)](https://doi.org/10.5281/zenodo.15120768)
+
  Galveston sea level rise (SLR), agent-based model (ABM), and reinforcement learning (RL) repository. Public version used for documenting this code. 
 
 *Note*: This repository requires input data that is available at 
