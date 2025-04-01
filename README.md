@@ -5,4 +5,8 @@
 Note, this repository requires input data that is available at 
 https://doi.org/10.5281/zenodo.12583277
 
-To run the code in this repository, download the above dataset and add it to the main directory in a folder named `slr-scenarios`.
+After the dataset above is downloaded, add it to the main directory in a folder named `slr-scenarios`.
+
+As documented in 
+
+![alt text](https://github.com/22dylan/slr-abm-rl-public/figures/flowchart?raw=true)
