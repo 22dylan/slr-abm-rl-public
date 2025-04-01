@@ -9,4 +9,4 @@ After the dataset above is downloaded, add it to the main directory in a folder 
 
 As documented in 
 
-![alt text](https://github.com/22dylan/slr-abm-rl-public/figures/flowchart.png?raw=true)
+![alt text](https://github.com/22dylan/slr-abm-rl-public/blob/main/figures/flowchart.png?raw=true)
